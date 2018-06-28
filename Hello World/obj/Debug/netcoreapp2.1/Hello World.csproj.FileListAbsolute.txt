@@ -1,0 +1,11 @@
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\obj\Debug\netcoreapp2.1\Hello World.csprojAssemblyReference.cache
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\obj\Debug\netcoreapp2.1\Hello World.csproj.CoreCompileInputs.cache
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\obj\Debug\netcoreapp2.1\Hello World.AssemblyInfoInputs.cache
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\obj\Debug\netcoreapp2.1\Hello World.AssemblyInfo.cs
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\bin\Debug\netcoreapp2.1\Hello World.deps.json
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\bin\Debug\netcoreapp2.1\Hello World.runtimeconfig.json
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\bin\Debug\netcoreapp2.1\Hello World.runtimeconfig.dev.json
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\bin\Debug\netcoreapp2.1\Hello World.dll
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\bin\Debug\netcoreapp2.1\Hello World.pdb
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\obj\Debug\netcoreapp2.1\Hello World.dll
+C:\Users\TimothyF\Desktop\C#\Session 1\Hello World\Hello World\obj\Debug\netcoreapp2.1\Hello World.pdb

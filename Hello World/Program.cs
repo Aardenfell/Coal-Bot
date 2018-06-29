@@ -36,9 +36,10 @@ namespace Hello_World
                 name = Console.ReadLine();
                 Thread.Sleep(2000);
                 Console.WriteLine("Hello, " + name + "!");
+                AskAgain:
                 Console.WriteLine("Would you like to play a game? [Y/N]");
                 answer = Console.ReadLine();
-                if (answer == "N")
+                if (answer == "N" || answer == "n")
                 {
                     Console.WriteLine("Aw alright then, I guess I'll go then...");
                     Console.WriteLine("Bye bye");
@@ -46,30 +47,48 @@ namespace Hello_World
                     Environment.Exit(0);
                     
                 }
-                else if (answer == "Y")
+                if (answer == "Y" || answer == "y")
                 {
                     Console.WriteLine("GREAT!");
                     break;
                 }
-                
+                else if (answer != "Y" || answer != "y" || answer != "N" || answer != "n")
+                {
+                    Console.WriteLine("I'm sorry. I don't understand that");
+                    Thread.Sleep(1000);
+                    goto AskAgain;
+                }
             } while ((answer == "Y") || (answer == "y"));
             PlayAgain:
             do
             {
                 Console.WriteLine("Okay. Choose any number and I'll tell you if it's prime or not.");
                 Thread.Sleep(1500);
+                tryAgain:
                 Console.WriteLine("Ready?");
                 Thread.Sleep(1500);
                 Console.WriteLine("GO!");
-                number = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    number = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Owwie. That number is too big");
+                    Console.WriteLine("Can you try a smaller number please?");
+                    Thread.Sleep(1000);
+                    goto tryAgain;
+                }
+                
                 if (IsPrime(number))
                 {
                     Console.WriteLine("It is prime! YAAAAY!");
                     Thread.Sleep(1500);
+                    again1:
                     Console.WriteLine("Wanna play again? :0");
                     Console.WriteLine("[Y/N]");
                     answer = Console.ReadLine();
-                    if (answer == "N")
+                    if (answer == "N" || answer == "n")
                     {
                         Console.WriteLine("Aw alright then, I guess I'll go then...");
                         Console.WriteLine("Bye bye");
@@ -77,20 +96,27 @@ namespace Hello_World
                         Environment.Exit(0);
 
                     }
-                    else if (answer == "Y")
+                    if (answer == "Y" || answer == "y")
                     {
                         Console.WriteLine("GREAT!");
                         goto PlayAgain;
+                    }
+                    else if (answer != "Y" || answer != "y" || answer != "N" || answer != "n")
+                    {
+                        Console.WriteLine("I'm sorry. I don't understand that");
+                        Thread.Sleep(1000);
+                        goto again1;
                     }
                 }
                 else
                 {
                     Console.WriteLine("It is not prime. :( sad face ");
                     Thread.Sleep(1500);
+                    again2:
                     Console.WriteLine("Wanna play again? :0");
                     Console.WriteLine("[Y/N]");
                     answer = Console.ReadLine();
-                    if (answer == "N")
+                    if (answer == "N" || answer == "n")
                     {
                         Console.WriteLine("Aw alright then, I guess I'll go then...");
                         Console.WriteLine("Bye bye");
@@ -98,10 +124,16 @@ namespace Hello_World
                         Environment.Exit(0);
 
                     }
-                    else if (answer == "Y")
+                    if (answer == "Y" || answer == "y")
                     {
                         Console.WriteLine("GREAT!");
                         goto PlayAgain;
+                    }
+                    else if (answer != "Y" || answer != "y" || answer != "N" || answer != "n")
+                    {
+                        Console.WriteLine("I'm sorry. I don't understand that");
+                        Thread.Sleep(1000);
+                        goto again2;
                     }
                 }
             } while ((answer == "Y") || (answer == "y"));

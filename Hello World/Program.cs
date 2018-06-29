@@ -70,9 +70,9 @@ namespace Hello_World
                 Console.WriteLine("GO!");
                 try
                 {
-                    number = Convert.ToInt32(Console.ReadLine());
+                    number = Convert.ToInt32(Console.ReadLine()); // Still looking to catch invalid entry I.E: "-", "(", etc.
                 }
-                catch (Exception)
+                catch (Exception) // Catches when number is too high :)
                 {
                     Console.WriteLine("Owwie. That number is too big");
                     Console.WriteLine("Can you try a smaller number please?");
